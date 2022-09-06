@@ -1,0 +1,98 @@
+@import url('http://fonts.cdnfonts.com/css/barbarian');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  /* max-height: 100vh;
+  min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: Background infinite ease 5s;
+  -webkit-animation: Background infinite ease 5s;
+  padding: 10px;
+  position: relative;
+}
+@keyframes Background{
+  0%{
+    background: #000;
+  }
+  50%{
+    background: #333;
+  }
+  100%{
+    background: #000;
+  }
+}
+header{
+  margin: 20px 0;
+  width: 90%;
+  border: 10px solid #ddd;
+  border-bottom: 17px solid #ddd;
+  border-right: 17px  solid #ddd;
+  border-radius: 30px;
+  background: #ccc;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: inset 30px 30px 50px #999, 10px 10px 15px #000;
+
+}
+header h1{
+  font-size: 6em;
+  font-family: 'Barbarian', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #333;
+}
+header img{
+  width: 200px;
+}
+main{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  background: rgba(255,255,255,0.2);
+}
+main nav, main aside{
+  position: absolute;
+}
+main nav{
+  left: 10px;
+}
+main section{
+  background: rgba(255,255,255,0.2);
+  width: 60%;
+  padding: 30px 20px 10px;
+}
+main section article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(255,255,255,0.2);
+  
+}
+main aside{
+  right: 10px;
+}
+footer{
+
+}
